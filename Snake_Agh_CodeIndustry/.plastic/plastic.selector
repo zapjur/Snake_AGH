@@ -1,0 +1,4 @@
+repository "Snake_AGH_CodeIndustry@Snake_AGH_CodeIndustry@cloud"
+  path "/"
+    br "/main"
+    co "/main"
