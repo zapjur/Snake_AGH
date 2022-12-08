@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEditor.UI;
+
 
 public class SnakeController : MonoBehaviour
 {
@@ -29,6 +29,7 @@ public class SnakeController : MonoBehaviour
     public float steerDirection;
 
     private Score_1 _score;
+    public bool isDashing = false;
     
     
     // Start is called before the first frame update
@@ -53,7 +54,7 @@ public class SnakeController : MonoBehaviour
         
         positionsHistory.Insert(0, transform.position);
 
-        gap = Math.Abs((int)Math.Round(500/moveSpeed));
+        gap = Math.Abs((int)Math.Round(100/moveSpeed));
         
         int index = 0;
         foreach (var body in bodyParts)
@@ -91,9 +92,12 @@ public class SnakeController : MonoBehaviour
 
     public IEnumerator Dash()
     {
+        isDashing = true;
         moveSpeed *= 5;
         yield return new WaitForSeconds(0.2f);
         moveSpeed /= 5;
+        yield return new WaitForSeconds(0.5f);
+        isDashing = false;
     }
 
     public void DriftEnter()

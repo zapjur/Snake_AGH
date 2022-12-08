@@ -32,7 +32,7 @@ public class SnakeCollision : MonoBehaviour
             else _snakeController.growSnake();
         }
 
-        if (collision.collider.tag == "Body" && _snakeController.cubeCounter > 10)
+        if (collision.collider.tag == "Body" && _snakeController.cubeCounter > 10 && !(_snakeController.isDashing))
         {
             FindObjectOfType<GameManager>().EndGame();
             _snakeController.Die();

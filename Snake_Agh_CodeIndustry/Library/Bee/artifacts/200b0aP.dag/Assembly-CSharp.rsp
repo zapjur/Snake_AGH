@@ -322,6 +322,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/KilledTextEnable.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/RandomObjectSpawner.cs"
 "Assets/Scripts/RandomRunning.cs"
 "Assets/Scripts/RunningAway.cs"
@@ -331,6 +332,7 @@
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/StartMenuManager.cs"
 "Assets/Scripts/TextInvertedSteering.cs"
+"Assets/Scripts/tooShort.cs"
 -langversion:9.0
 
 /deterministic

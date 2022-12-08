@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     {
         if (gameHasEnded && Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadScene("StartScene");
+            Application.Quit();
         }
         else if (gameHasEnded && Input.anyKeyDown)
         {

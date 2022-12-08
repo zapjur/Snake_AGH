@@ -369,6 +369,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/KilledTextEnable.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/RandomObjectSpawner.cs"
 "Assets/Scripts/RandomRunning.cs"
 "Assets/Scripts/RunningAway.cs"
